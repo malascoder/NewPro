@@ -64,7 +64,7 @@
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link " href="#" data-toggle="modal" data-target="#logoutModal">
           <i class="fas fa-fw fa-sign-out-alt"></i>
           <span>Logout</span></a>
       </li>
@@ -274,8 +274,6 @@
 
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">Input data Surat Masuk</h1>
-            <a href="404.html" class="btn btn-primary">Baru</a>
-            <br><br>
             
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
@@ -321,24 +319,26 @@
                       <input type="date" class="form-control">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group col col-sm-6">
                       <label>Upload dokumen:</label>
-                      <div class="col col-sm-4">
                       <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
-                      </div>
-                      <input type="submit" value="Upload File(s)" name="submit" class="btn btn-primary">
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-success">Simpan</button>
+                      <button type="button" class="btn btn-secondary">Reset</button>
+                      <button type="button" class="btn btn-danger">Batal</button>
                     </div>
                   </form>
           </div>
           </div> 
                 </div>
             </div>
-        </div>
+        
         <!-- /.container-fluid -->
 
-      </div>
       <!-- End of Main Content -->
-
+  
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
@@ -349,9 +349,8 @@
       </footer>
       <!-- End of Footer -->
 
-    </div>
+    
     <!-- End of Content Wrapper -->
-
   </div>
   <!-- End of Page Wrapper -->
 
