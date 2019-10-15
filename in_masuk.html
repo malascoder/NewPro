@@ -49,14 +49,14 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>Surat</span>
         </a>
-        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="index.html">Surat Masuk</a>
+            <a class="collapse-item" href="index.html">Surat Masuk</a>
             <a class="collapse-item" href="cards.html">Surat Keluar</a>
           </div>
         </div>
@@ -273,42 +273,64 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Data Input Masuk</h1>
+          <h1 class="h3 mb-4 text-gray-800">Input data Surat Masuk</h1>
             <a href="404.html" class="btn btn-primary">Baru</a>
-            <br>
-            <br>
+            <br><br>
             
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Input data Table</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Input data Surat Masuk</h6>
                 </div>
-                <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered table-hover" id='inputTable' width="100%" cellspacing="0">
-                        <thead class="thead-dark">
-                        <tr>
-                            <th>No</th>
-                            <th>Nomor</th>
-                            <th>Kategori</th>
-                            <th>Perihal</th>
-                            <th>Nama Pengirim</th>
-                            <th>Tanggal Surat</th>
-                            <th>Operasi</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>    
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                            </tr>  
-                        </tbody>
-                    </table>
-                </div>
+                <div class="card-body"> 
+                  <form action="">
+                    <div class="form-group  col col-sm-6">
+                      <label>Nomor:</label>
+                      <input type="text" class="form-control" id="nomor" placeholder="Nomor">
+                    </div>
+
+                    <div class="form-group  col col-sm-6">
+                      <label>Kategori:</label>
+                      <select name="kategori" id="kategori" class="form-control">
+                        <option value="A">A</option>
+                        <option value="B">Memet</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group  col col-sm-6">
+                      <label>Perihal:</label>
+                      <input type="text" class="form-control" id="perihal" placeholder="Perihal">
+                    </div>
+
+                    <div class="form-group  col col-sm-6">
+                      <label>Nama pengirim:</label>
+                      <input type="text" class="form-control" id="perihal" placeholder="Nama pengirim">
+                    </div>
+                 
+                    <div class="form-group  col col-sm-6">
+                      <label>Alamat pengirim:</label>
+                      <input type="text" class="form-control" id="perihal" placeholder="Alamat pengirim">
+                    </div>
+
+                    <div class="form-gorup  col col-sm-6">
+                      <label>Isi surat:</label>
+                      <textarea class="form-control" placeholder="Isi surat" rows="5"></textarea>
+                    </div>
+                    
+                    <div class="form-group  col col-sm-6">
+                      <label>Tanggal surat:</label>
+                      <input type="date" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                      <label>Upload dokumen:</label>
+                      <div class="col col-sm-4">
+                      <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
+                      </div>
+                      <input type="submit" value="Upload File(s)" name="submit" class="btn btn-primary">
+                    </div>
+                  </form>
+          </div>
+          </div> 
                 </div>
             </div>
         </div>
