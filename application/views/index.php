@@ -12,11 +12,11 @@
   <title>SmartSchool</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo("assets/vendor/fontawesome-free/css/all.min.css")?>" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="<?php echo("assets/css/sb-admin-2.min.css")?>" rel="stylesheet">
 
 </head>
 
@@ -31,7 +31,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon">
-          <img src="img/logo.png" width="50px">
+          <img src="<?php echo("assets/img/logo.png")?>" width="50px">
         </div>
         <div class="sidebar-brand-text mx-3">Smart<sup>School</sup></div>
       </a>
@@ -49,21 +49,21 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <li class="nav-item active">
+        <a class="nav-link" href="<?php echo('main')?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
         </li>
-
-      <li class="nav-item active">
+        
+        <li class="nav-item">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>Surat</span>
         </a>
-        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="index.html">Surat Masuk</a>
-            <a class="collapse-item" href="out_keluar.html">Surat Keluar</a>
+            <a class="collapse-item" href="<?php echo('main/masuk')?>">Surat Masuk</a>
+            <a class="collapse-item" href="<?php echo('main/keluar')?>">Surat Keluar</a>
           </div>
         </div>
       </li>
@@ -249,42 +249,67 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800"><sup>Input data</sup> Surat masuk</h1>
-            <a href="in_masuk.html" class="btn btn-primary">Baru</a>
-            <br>
-            <br>
+          <h1 class="h3 mb-4 text-gray-800">Dashboard</h1>
             
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Input data Table</h6>
-                </div>
-                <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-bordered table-hover" id='inputTable' width="100%" cellspacing="0">
-                        <thead class="thead-dark">
-                        <tr>
-                            <th>No</th>
-                            <th>Nomor</th>
-                            <th>Kategori</th>
-                            <th>Perihal</th>
-                            <th>Nama Pengirim</th>
-                            <th>Tanggal Surat</th>
-                            <th>Operasi</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>    
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>2</td>
-                            </tr>  
-                        </tbody>
-                    </table>
-                </div>
+            <div class="content">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="font-weight-bold text-primary">Informasi Surat Masuk dan Keluar</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary h-100 py-2">
+                                <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-uppercase mb-1">Agenda Yang Akan Datang</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                            </div>
+                            <div class="col-auto">
+                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success h-100 py-2">
+                                <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-uppercase mb-1">Surat Masuk</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                            </div>
+                            <div class="col-auto">
+                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="col mr-2"><a href="out_masuk.html">Selengkapnya</a></div>
+                      </div>
+                    </div>
+                        
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-danger h-100 py-2">
+                                <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-uppercase mb-1">Surat Keluar</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                            </div>
+                            <div class="col-auto">
+                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mr-2"><a href="out_masuk.html">Selengkapnya</a></div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -334,14 +359,14 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo("assets/vendor/jquery/jquery.min.js")?>"></script>
+  <script src="<?php echo("assets/vendor/bootstrap/js/bootstrap.bundle.min.js")?>"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="<?php echo("assets/vendor/jquery-easing/jquery.easing.min.js")?>"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="<?php echo("assets/js/sb-admin-2.min.js")?>"></script>
 
 </body>
 
