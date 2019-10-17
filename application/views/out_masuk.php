@@ -12,11 +12,11 @@
   <title>SmartSchool</title>
 
   <!-- Custom fonts for this template-->
-  <link rel="stylesheet" href="<?php echo("assets/vendor/fontawesome-free/css/all.min.css")?>" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url("assets/vendor/fontawesome-free/css/all.min.css")?>" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" >
 
   <!-- Custom styles for this template-->
-  <link rel="stylesheet" href="<?php echo("assets/css/sb-admin-2.min.css")?>">
+  <link rel="stylesheet" href="<?php echo base_url("assets/css/sb-admin-2.min.css")?>">
 
 </head>
 
@@ -31,7 +31,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon">
-          <img src="img/logo.png" width="50px">
+          <img src="<?php echo base_url('img/logo.png')?>" width="50px">
         </div>
         <div class="sidebar-brand-text mx-3">Smart<sup>School</sup></div>
       </a>
@@ -50,7 +50,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?php echo base_url('index.php/main/index')?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
         </li>
@@ -62,8 +62,8 @@
         </a>
         <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="index.html">Surat Masuk</a>
-            <a class="collapse-item" href="out_keluar.html">Surat Keluar</a>
+            <a class="collapse-item active" href="<?php echo base_url('index.php/main/masuk')?>">Surat Masuk</a>
+            <a class="collapse-item" href="<?php echo base_url('index.php/main/keluar')?>">Surat Keluar</a>
           </div>
         </div>
       </li>
@@ -250,7 +250,7 @@
 
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800"><sup>Input data</sup> Surat masuk</h1>
-            <a href="in_masuk.html" class="btn btn-primary">Baru</a>
+            <a href="<?php echo base_url('main/masuk')?>" class="btn btn-primary">Baru</a>
             <br>
             <br>
             
@@ -334,14 +334,14 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="<?php echo("assets/vendor/jquery/jquery.min.js")?>"></script>
-  <script src="<?php echo("assets/vendor/bootstrap/js/bootstrap.bundle.min.js")?>"></script>
+  <script src="<?php echo base_url("assets/vendor/jquery/jquery.min.js")?>"></script>
+  <script src="<?php echo base_url("assets/vendor/bootstrap/js/bootstrap.bundle.min.js")?>"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="<?php echo("assets/vendor/jquery-easing/jquery.easing.min.js")?>"></script>
+  <script src="<?php echo base_url("assets/vendor/jquery-easing/jquery.easing.min.js")?>"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="<?php echo("assets/js/sb-admin-2.min.js")?>"></script>
+  <script src="<?php echo base_url("assets/js/sb-admin-2.min.js")?>"></script>
 
 </body>
 

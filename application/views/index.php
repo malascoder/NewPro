@@ -68,6 +68,13 @@
         </div>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo('main/register')?>">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Registrasi Akun</span></a>
+        </li>
+
+      <hr class="sidebar-divider">
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -288,7 +295,7 @@
                             
                           </div>
                         </div>
-                        <div class="col mr-2"><a href="out_masuk.html">Selengkapnya</a></div>
+                        <div class="col mr-2"><a href="<?php echo('main/masuk')?>">Selengkapnya</a></div>
                       </div>
                     </div>
                         
@@ -305,7 +312,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col mr-2"><a href="out_masuk.html">Selengkapnya</a></div>
+                        <div class="col mr-2"><a href="<?php echo('main/keluar')?>">Selengkapnya</a></div>
                       </div>
                     </div>
                     </div>

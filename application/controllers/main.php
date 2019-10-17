@@ -14,5 +14,11 @@
         public function keluar(){
             $this->load->view('out_keluar');
         }
+
+        public function register(){
+            $this->load->view('register');
+        }
+
+        
     }
 ?>
